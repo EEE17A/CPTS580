@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatin</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./public/sign-removebg-preview.png">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="grid-container">
+            <div>
+                <a class="left" href="index.html">FATIN, MD TASNIM FARHAN</a>
+            </div>
+            <div>
+                <ul class="nav">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="home">
+        <div class="grid-container">
+            <div class="profile">
+                <img src="./public/profile-photo.jpg" alt="Md. Tasnim Farhan Fatin" id="profile-img">
+                <button onclick="changeImage()">Click to Change Image</button>
+            </div>
+            <div>
+                <h2 class="header-underline">Hi, I'm Fatin.</h2>
+                <p>I'm a computer science graduate student at WSU.</p>
+                <div class="flex-container">
+                    <div><a href="https://github.com"><img src="./public/github.png" alt="Github"
+                                class="contact-img"></a>
+                    </div>
+                    <div><a href="https://linkedin.com"><img src="./public/linkedin.png" alt="Linkedin"
+                                class="contact-img"></a>
+                    </div>
+                    <div><a href="https://instagram.com"><img src="./public/instagram.png" alt="Instagram"
+                                class="contact-img"></a>
+                    </div>
+                    <div><a href="https://youtube.com"><img src="./public/youtube.png" alt="Youtube"
+                                class="contact-img"></a>
+                    </div>
+                    <div><a href="mailto:example@example.com"><img src="./public/envelope.png" alt="Envelope"
+                                class="contact-img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="about">
+        <h2 class="header-underline">About Me</h2>
+        <p>In my previous role at a financial institution, I worked in the Technology Division.
+            I managed and maintained 800 Linux servers in various environments.
+            I was also responsible for setting up and monitoring physical servers.
+            Additionally, I handled the configuration of virtual environments.
+            I held this position until September 2023.</p>
+    </div>
+
+    <div class="content" id="project">
+        <h2 class="header-underline">Projects</h2>
+        <h3>Recent Work</h3>
+        <div class="grid-container">
+            <div>
+                <div><a href="https://github.com">
+                        <img src="./public/ALU-removebg-preview.png" alt="4-Bit Breadboard ALU" class="desc-img">
+                    </a></div>
+                <h3 class="underline-effect">4-Bit Breadboard ALU</h3>
+                <p>Developed a 4-bit ALU prototype on a breadboard with ICs,
+                    enabling basic logical and arithmetic operations, displayed on a 7-segment output.
+                </p>
+            </div>
+            <div>
+                <div><a href="https://github.com">
+                        <img src="./public/plant_water-removebg-preview.png" alt="Smart IoT Plant Waterer"
+                            class="desc-img">
+                    </a></div>
+                <h3 class="underline-effect">Smart IoT Plant Waterer</h3>
+                <p>Developed a real-time monitoring system for video,
+                    temperature, humidity, and rain, while maintaining a database for record tracking.
+                </p>
+            </div>
+            <div>
+                <div><a href="https://github.com">
+                        <img src="./public/sign-removebg-preview.png" alt="Bangla Sign Language Detection"
+                            class="desc-img">
+                    </a></div>
+                <h3 class="underline-effect">Sign Language Detection</h3>
+                <p>Built a glove with flex sensors to convert sign language into electrical signals,
+                    which are then translated into Bangla text using neural networks.
+                </p>
+            </div>
+            <div>
+                <div><a href="https://github.com">
+                        <img src="./public/ofdm-removebg-preview.png" alt="OFDM Simulation" class="desc-img">
+                    </a></div>
+                <h3 class="underline-effect">OFDM Simulation</h3>
+                <p>Transformed data using various modulation schemes, transmitted through a simulated channel,
+                    and performed demodulation to visualize performance."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="contact">
+        <h2 class="header-underline">Contact</h2>
+        <p>Please feel free to e-mail me at fatinfarhan24@gmail.com</p>
+        <div class="comment-box">
+            <form action="/" method="post">
+                <input type="text" id="name" name="name" placeholder="Add a comment" required>
+                <button type="submit">Comment</button>
+            </form>
+            <div>
+                {{data}}
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="content">
+        <div class="container">
+            <p>Updated January 23, 2025</p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

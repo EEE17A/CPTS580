@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  background-image: url("./public/background.jpg");
+  font-family: 'Roboto';
+  font-size: 200%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.navbar {
+  background-color: white;
+  padding: 0 10%;
+}
+
+.left {
+  padding-top: 14px;
+  display: block;
+  text-decoration: none;
+  color: black
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 0 14px 0;
+  margin-right: 40px;
+  text-decoration: underline lightgray 2px;
+  text-underline-offset: 8px;
+}
+
+ul.nav li a:hover:not(.active) {
+  text-decoration: underline black 2px;
+}
+
+ul.nav li a.active {
+  text-decoration: none
+}
+
+
+.content {
+  padding: 0 10%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+.profile {
+  align-content: center;
+}
+
+#profile-img {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.profile>div {
+  margin-left: 125px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.desc-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 20px mintcream, 5px 5px 20px gray;
+}
+
+.desc-img:hover {
+  box-shadow: inset 5px 5px 20px gray, inset -5px -5px 20px mintcream;
+}
+
+.underline-effect {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #b5e48c, #52b69a);
+}
+
+.underline-effect:hover {
+  background: linear-gradient(to right, #b5e48c, #52b69a);
+}
+
+.header-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #89c2d9, #95d5b2);
+}
+
+.header-underline:hover {
+  background: linear-gradient(to right, #89c2d9, #95d5b2);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container>div {
+  background-color: #f1f1f1;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.flex-container>div:hover {
+  background: linear-gradient(to right, #90c6db, #63c890);
+}
+
+.contact-img {
+  width: 25px;
+  height: 25px;
+}
+
+.comment-box {
+  padding: 10px;
+  max-width: 1000px;
+}
+
+input {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 100%;
+}
+
+button {
+  background: linear-gradient(to right, #90c6db, #63c890);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+button:hover {
+  background: linear-gradient(to right, #63c890, #90c6db);
+}
+
+.comment {
+  background: hsla(0, 100%, 100%, .3);
+
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1% 0;
+  border-radius: 1%;
+}
+
+#footer p {
+  font-size: 1rem;
+}
